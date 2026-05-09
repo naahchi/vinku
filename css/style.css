@@ -129,10 +129,10 @@ main::before{
     white-space: nowrap;
     z-index: 0;
 }
-main > * {
+/* main > * {
     position: relative;
     z-index: 2;
-}
+} */
 
 .coming_soon{
     color: gray;
