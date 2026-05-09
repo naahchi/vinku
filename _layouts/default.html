@@ -12,6 +12,10 @@
         {% unless page.disable_main_heading %} 
             <h1>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} service {{ page.city | replace: "-", " " | capitalize | default: "India" | capitalize }}</h1>
         {% endunless %}
+
+        {% unless page.disable_search_bar %}
+            {% include search.html %}
+        {% endunless %}
     </main>
     {% include footer.html %}
 <script src="/js/main.js"></script>
