@@ -13,6 +13,7 @@
             <h1>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} service {{ page.city | replace: "-", " " | capitalize | default: "India" | capitalize }}</h1>
         {% endunless %}
     </main>
+    {% include footer.html %}
 <script src="/js/main.js"></script>
 </body>
 </html>
