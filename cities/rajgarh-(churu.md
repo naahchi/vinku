@@ -1,6 +1,6 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
-permalink: /rajasthan/rajgarh-(churu/
+city: rajgarh-(churu)
+permalink: /rajasthan/rajgarh-churu/
 ---
