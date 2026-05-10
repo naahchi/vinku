@@ -1,7 +1,7 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
+city: rajgarh churu
 category: aunties
-permalink: /rajasthan/rajgarh-(churu/aunties/
+permalink: /rajasthan/rajgarh-churu/aunties/
 ---
