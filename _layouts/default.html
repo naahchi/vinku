@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</title>
+    <title>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} {{ page.center | replace: "-", " " | capitalize | default: "Service" }} {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 </head>
 <body>
     {% include header.html %}
     <main>
-        
+
         <div class="top_section">
             <div class="top_header">
                 {% unless page.disable_main_heading %} 
