@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 </head>
 <body>
     {% include header.html %}
     <main>
+        
         <div class="top_section">
             <div class="top_header">
                 {% unless page.disable_main_heading %} 
@@ -30,18 +32,21 @@
             <div id="recent-chips"></div>
         </div>
         
-        <div class="main_section">
-            <div class="main_bar">
-                {% unless page.disable_description %}
-                    <div class="description">
-                        <p>
-                            <span class="desc_city"><strong>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }}</strong></span> Service in <span class="desc_city"><strong>{{ page.city | default: "india" | replace: "-", " " | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</strong></span>. offers trusted and verified providers near you, delivering quality solutions with affordable pricing and flexible payment options including <strong>Cash on Delivery</strong>. Choose reliable services designed to meet your needs with ease and convenience.
-                        </p>
-                    </div>
-                {% endunless %}    
+        {% unless page.disable_search_bar %}
+            <div class="main_section">
+                <div class="main_bar">
+                    {% unless page.disable_description %}
+                        <div class="description">
+                            <p>
+                                <span class="desc_city"><strong>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }}</strong></span> Service in <span class="desc_city"><strong>{{ page.city | default: "india" | replace: "-", " " | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</strong></span>. offers trusted and verified providers near you, delivering quality solutions with affordable pricing and flexible payment options including <strong>Cash on Delivery</strong>. Choose reliable services designed to meet your needs with ease and convenience.
+                            </p>
+                        </div>
+                    {% endunless %}    
+                </div>
+                <div class="side_bar"></div>
             </div>
-            <div class="side_bar"></div>
-        </div>
+        {% endunless %}
+
     </main>
     {% include footer.html %}
 <script src="/js/main.js"></script>
