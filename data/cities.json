@@ -1,7 +1,7 @@
 [
-	{"city":"Maharashtra"},
+	{"city":"Maharashtra", "state":"India"},
+	{"city":"Andaman and Nicobar Islands", "state":"India"},
 	{"city":"Kolhapur", "state":"Maharashtra"},
-	{"city":"Andaman and Nicobar Islands"},
 	{"city":"Port Blair", "state":"Andaman and Nicobar Islands"},
 	{"city":"Adilabad", "state":"Andhra Pradesh"},
 	{"city":"Adoni", "state":"Andhra Pradesh"},
