@@ -1,7 +1,7 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
+city: rajgarh-(churu)
 category: housewifes
-permalink: /rajasthan/rajgarh-(churu/housewifes/
+permalink: /rajasthan/rajgarh-churu/housewifes/
 ---

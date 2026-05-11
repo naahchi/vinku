@@ -1,7 +1,7 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
+city: rajgarh-(churu)
 category: callgirls
-permalink: /rajasthan/rajgarh-(churu/callgirls/
+permalink: /rajasthan/rajgarh-churu/callgirls/
 ---

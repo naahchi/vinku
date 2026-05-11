@@ -1,7 +1,7 @@
 ---
 layout: default
 state: haryana
-city: haibat(yamuna-nagar)
+city: haibat-(yamuna-nagar)
 category: models
-permalink: /haryana/haibat(yamuna-nagar)/models/
+permalink: /haryana/haibat-yamuna-nagar/models/
 ---

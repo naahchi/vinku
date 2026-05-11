@@ -1,7 +1,7 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
+city: rajgarh-(churu)
 category: bhabhis
-permalink: /rajasthan/rajgarh-(churu/bhabhis/
+permalink: /rajasthan/rajgarh-churu/bhabhis/
 ---

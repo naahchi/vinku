@@ -1,7 +1,7 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
+city: rajgarh-(churu)
 category: college-girls
-permalink: /rajasthan/rajgarh-(churu/college-girls/
+permalink: /rajasthan/rajgarh-churu/college-girls/
 ---

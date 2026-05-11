@@ -1,7 +1,7 @@
 ---
 layout: default
 state: rajasthan
-city: rajgarh-(churu
+city: rajgarh-(churu)
 category: escorts
-permalink: /rajasthan/rajgarh-(churu/escorts/
+permalink: /rajasthan/rajgarh-churu/escorts/
 ---
