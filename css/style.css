@@ -277,7 +277,8 @@ li:hover, .active {
 
 /* Recent Search Section */
 #recent-container{
-    margin: 10px 0;
+    width: 80%;
+    margin: 10px auto;
 }
 .recent-header{
     display: flex;
@@ -360,6 +361,9 @@ li:hover, .active {
         width: 85%;
         /* margin: 0 auto 10px auto; */
     }
+    #recent-container{
+        width: 95%;
+    }
     .main_section{
         width: 95%;
         /* grid-template-columns: 1fr; */
@@ -429,6 +433,9 @@ li:hover, .active {
     .top_icons{
         display: flex;
         gap: 10px;
+    }
+    #recent-container{
+        width: 100%;
     }
     main{
         min-height: calc(100dvh - 129px);
