@@ -107,6 +107,9 @@ h1{
     border: 1px solid rgb(101, 101, 101);
     border-radius: 15px;       
 }
+.menu_text{
+    display: none;
+}
 
 main{
     /* position: relative; */
@@ -490,6 +493,9 @@ li:hover, .active {
     .top_icons{
         display: flex;
         gap: 10px;
+    }
+    .menu_text{
+        display: block;
     }
     #recent-container{
         width: 100%;
