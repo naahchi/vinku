@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Assam
-permalink: /assam/
+state: India
+city: Assam
+permalink: /india/assam/
 ---

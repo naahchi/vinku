@@ -1,5 +1,6 @@
 ---
 layout: default
-state: West Bengal
-permalink: /west-bengal/
+state: India
+city: West Bengal
+permalink: /india/west-bengal/
 ---

@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Andaman And Nicobar Islands
-permalink: /andaman-and-nicobar-islands/
+state: India
+city: Andaman And Nicobar Islands
+permalink: /india/andaman-and-nicobar-islands/
 ---

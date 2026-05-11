@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Bihar
-permalink: /bihar/
+state: India
+city: Bihar
+permalink: /india/bihar/
 ---

@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Tamil Nadu
-permalink: /tamil-nadu/
+state: India
+city: Tamil Nadu
+permalink: /india/tamil-nadu/
 ---

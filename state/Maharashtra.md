@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Maharashtra
-permalink: /maharashtra/
+state: India
+city: Maharashtra
+permalink: /india/maharashtra/
 ---

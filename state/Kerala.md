@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Kerala
-permalink: /kerala/
+state: India
+city: Kerala
+permalink: /india/kerala/
 ---

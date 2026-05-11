@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Haryana
-permalink: /haryana/
+state: India
+city: Haryana
+permalink: /india/haryana/
 ---

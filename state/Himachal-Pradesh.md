@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Himachal Pradesh
-permalink: /himachal-pradesh/
+state: India
+city: Himachal Pradesh
+permalink: /india/himachal-pradesh/
 ---

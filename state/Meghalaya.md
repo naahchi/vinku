@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Meghalaya
-permalink: /meghalaya/
+state: India
+city: Meghalaya
+permalink: /india/meghalaya/
 ---

@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Uttar Pradesh
-permalink: /uttar-pradesh/
+state: India
+city: Uttar Pradesh
+permalink: /india/uttar-pradesh/
 ---

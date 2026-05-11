@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Delhi
-permalink: /delhi/
+state: India
+city: Delhi
+permalink: /india/delhi/
 ---

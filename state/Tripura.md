@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Tripura
-permalink: /tripura/
+state: India
+city: Tripura
+permalink: /india/tripura/
 ---

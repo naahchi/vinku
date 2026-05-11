@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Andhra Pradesh
-permalink: /andhra-pradesh/
+state: India
+city: Andhra Pradesh
+permalink: /india/andhra-pradesh/
 ---

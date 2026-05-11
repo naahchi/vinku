@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Manipur
-permalink: /manipur/
+state: India
+city: Manipur
+permalink: /india/manipur/
 ---

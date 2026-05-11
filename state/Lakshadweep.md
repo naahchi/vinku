@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Lakshadweep
-permalink: /lakshadweep/
+state: India
+city: Lakshadweep
+permalink: /india/lakshadweep/
 ---

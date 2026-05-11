@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Jharkhand
-permalink: /jharkhand/
+state: India
+city: Jharkhand
+permalink: /india/jharkhand/
 ---

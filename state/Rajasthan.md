@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Rajasthan
-permalink: /rajasthan/
+state: India
+city: Rajasthan
+permalink: /india/rajasthan/
 ---

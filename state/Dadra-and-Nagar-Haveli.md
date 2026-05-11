@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Dadra and Nagar Haveli
-permalink: /dadra-and-nagar-haveli/
+state: India
+city: Dadra and Nagar Haveli
+permalink: /india/dadra-and-nagar-haveli/
 ---

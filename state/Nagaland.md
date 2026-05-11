@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Nagaland
-permalink: /nagaland/
+state: India
+city: Nagaland
+permalink: /india/nagaland/
 ---

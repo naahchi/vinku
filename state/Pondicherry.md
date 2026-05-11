@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Pondicherry
-permalink: /pondicherry/
+state: India
+city: Pondicherry
+permalink: /india/pondicherry/
 ---

@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Orissa
-permalink: /orissa/
+state: India
+city: Orissa
+permalink: /india/orissa/
 ---

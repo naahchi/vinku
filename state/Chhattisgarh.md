@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Chhattisgarh
-permalink: /chhattisgarh/
+state: India
+city: Chhattisgarh
+permalink: /india/chhattisgarh/
 ---

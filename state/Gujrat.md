@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Gujrat
-permalink: /gujrat/
+state: India
+city: Gujrat
+permalink: /india/gujrat/
 ---

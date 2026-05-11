@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Jammu and Kashmir
-permalink: /jammu-and-kashmir/
+state: India
+city: Jammu and Kashmir
+permalink: /india/jammu-and-kashmir/
 ---

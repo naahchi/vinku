@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Mizoram
-permalink: /mizoram/
+state: India
+city: Mizoram
+permalink: /india/mizoram/
 ---

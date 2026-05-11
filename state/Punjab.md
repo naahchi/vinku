@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Punjab
-permalink: /punjab/
+state: India
+city: Punjab
+permalink: /india/punjab/
 ---

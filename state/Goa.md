@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Goa
-permalink: /goa/
+state: India
+city: Goa
+permalink: /india/goa/
 ---

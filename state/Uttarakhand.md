@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Uttarakhand
-permalink: /uttarakhand/
+state: India
+city: Uttarakhand
+permalink: /india/uttarakhand/
 ---

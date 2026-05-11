@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Karnataka
-permalink: /karnataka/
+state: India
+city: Karnataka
+permalink: /india/karnataka/
 ---

@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Daman and Diu
-permalink: /daman-and-diu/
+state: India
+city: Daman and Diu
+permalink: /india/daman-and-diu/
 ---

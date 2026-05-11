@@ -1,5 +1,6 @@
 ---
 layout: default
-state: Sikkim
-permalink: /sikkim/
+state: India
+city: Sikkim
+permalink: /india/sikkim/
 ---
