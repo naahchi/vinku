@@ -484,7 +484,7 @@ li:hover, .active {
     }
     .icon_text svg{
         margin-top: 4px;
-        margin-bottom: -3px;
+        /* margin-bottom: -3px; */
     }
     .bottom_icon span{
         font-size: 11px;
