@@ -6,10 +6,10 @@
         {% if page.title %}
             {{ page.title }}
         {% else %}
-            <!-- {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} {{ page.center | replace: "-", " " | capitalize | default: "Service" }} {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %} -->
             {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}
         {% endif %}
     </title>
+    <!-- {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} {{ page.center | replace: "-", " " | capitalize | default: "Service" }} {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %} -->
     <!-- <title>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} {{ page.center | replace: "-", " " | capitalize | default: "Service" }} {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</title> -->
     <meta name="description" content='{{ page.category | replace: "-", " " | capitalize | default: "personals" }} service in {{ page.city | default: "india" | replace: "-", " " }}{% if page.state %}, {{ page.state | replace: "-", " " }}{% endif %} - trusted and verified providers near you offering quality solutions, affordable pricing, and cash on delivery options.'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +22,15 @@
 
         <div class="top_section">
             <div class="top_header">
-                {% unless page.disable_main_heading %} 
-                    <h1>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} service {{ page.city | replace: "-", " " | capitalize | default: "India" | capitalize }}</h1>
+                <!-- <h1>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} service {{ page.city | replace: "-", " " | capitalize | default: "India" | capitalize }}</h1> -->
+                {% unless page.disable_main_heading %}
+                    <h1>
+                        {% if page.title %}
+                            {{ page.title }}
+                        {% else %}
+                            {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}
+                        {% endif %}
+                    </h1> 
                 {% endunless %}
             </div>
             {% unless page.disable_search_bar %}
