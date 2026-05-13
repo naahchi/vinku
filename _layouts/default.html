@@ -39,16 +39,16 @@
         </div>
 
         <!-- Recent Searches -->
-        <div style="display:none;">
-            <!-- {% unless page.disable_recent_searches %} -->
-                <div class="recent-header">
-                    <span>Recent Search</span>
-                    <button class="recent_reset" onclick="clearRecent()">Reset</button>
-                </div>
-            
-                <div id="recent-chips"></div>
-            <!-- {% endunless %} -->
+         {% unless page.disable_recent_searches %}
+        <div id="recent-container" style="display:none;">
+            <div class="recent-header">
+                <span>Recent Search</span>
+                <button class="recent_reset" onclick="clearRecent()">Reset</button>
+            </div>
+        
+            <div id="recent-chips"></div>
         </div>
+        {% endunless %}
         
         {% unless page.disable_search_bar %}
             <div class="main_section">
