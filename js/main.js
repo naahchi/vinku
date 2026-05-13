@@ -348,9 +348,8 @@ function loadRecentSearches() {
     return;
   }
 
-  container.style.display = "block";
-
-  wrapper.classList.add("display_none");
+  container.classList.remove("recent_searches");
+  // container.style.display = "block";
 
   searches.forEach(item => {
 

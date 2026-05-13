@@ -278,6 +278,9 @@ li:hover, .active {
 }
 
 /* Recent Search Section */
+.recent_searches{
+    display: none;
+}
 #recent-container{
     width: 80%;
     margin: 10px auto;
@@ -437,9 +440,6 @@ li:hover, .active {
 /* Media queries */
 @media (max-width: 768px) {
     .display_none{
-        display: none;
-    }
-    #display_none{
         display: none;
     }
     .top_nav{

@@ -39,15 +39,16 @@
         </div>
 
         <!-- Recent Searches -->
-         {% unless page.disable_recent_searches %}
-        <div id="recent-container" style="display:none;">
-            <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
-                <span>Recent Search</span>
-                <button class="recent_reset" onclick="clearRecent()">Reset</button>
+        <!-- <div id="recent-container" style="display:none;"> -->
+        {% unless page.disable_recent_searches %}
+            <div id="recent-container" class="recent_searches {% if page.display %}{{ page.display }}{% endif %}">
+                <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
+                    <span>Recent Search</span>
+                    <button class="recent_reset" onclick="clearRecent()">Reset</button>
+                </div>
+            
+                <div id="recent-chips"></div>
             </div>
-        
-            <div id="{% if page.display %}{{ page.display | default: 'recent-chips' }}{% endif %}"></div>
-        </div>
         {% endunless %}
         
         {% unless page.disable_search_bar %}
