@@ -350,6 +350,8 @@ function loadRecentSearches() {
 
   container.style.display = "block";
 
+  wrapper.classList.add("display_none");
+
   searches.forEach(item => {
 
     const chip = document.createElement("div");
@@ -374,8 +376,6 @@ function loadRecentSearches() {
     chip.onclick = () => window.location.href = url;
 
     wrapper.appendChild(chip);
-
-    wrapper.classList.add("display_none");
   });
 }
 
