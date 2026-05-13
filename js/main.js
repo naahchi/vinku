@@ -374,6 +374,8 @@ function loadRecentSearches() {
     chip.onclick = () => window.location.href = url;
 
     wrapper.appendChild(chip);
+
+    wrapper.classList.add("display_none");
   });
 }
 
