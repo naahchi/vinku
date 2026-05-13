@@ -46,7 +46,7 @@
                 <button class="recent_reset" onclick="clearRecent()">Reset</button>
             </div>
         
-            <div id="recent-chips"></div>
+            <div id="{% if page.display %}{{ page.display | default: 'recent-chips' }}{% endif %}"></div>
         </div>
         {% endunless %}
         

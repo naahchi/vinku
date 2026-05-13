@@ -439,6 +439,9 @@ li:hover, .active {
     .display_none{
         display: none;
     }
+    #display_none{
+        display: none;
+    }
     .top_nav{
         height: 45px;
         padding: 0 10px;
