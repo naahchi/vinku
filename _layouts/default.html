@@ -39,8 +39,8 @@
         </div>
 
         <!-- Recent Searches -->
-        <div class="{% if page.display %}{{ page.display }}{% endif %}" id="recent-container" style="display:none;">
-            <div class="recent-header">
+        <div style="display:none;">
+            <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
                 <span>Recent Search</span>
                 <button class="recent_reset" onclick="clearRecent()">Reset</button>
             </div>
