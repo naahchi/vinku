@@ -430,6 +430,9 @@ li:hover, .active {
 }
 /* Media queries */
 @media (max-width: 768px) {
+    .display_none{
+        display: none;
+    }
     .top_nav{
         height: 45px;
         padding: 0 10px;
