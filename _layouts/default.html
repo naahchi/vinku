@@ -40,13 +40,13 @@
 
         <!-- Recent Searches -->
          {% unless page.disable_recent_searches %}
-        <div class="{% if page.display %}{{ page.display }}{% endif %}" id="recent-container" style="display:none;">
-            <div class="recent-header">
+        <div id="recent-container" style="display:none;">
+            <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
                 <span>Recent Search</span>
                 <button class="recent_reset" onclick="clearRecent()">Reset</button>
             </div>
         
-            <div id="recent-chips"></div>
+            <div class="{% if page.display %}{{ page.display }}{% endif %}" id="recent-chips"></div>
         </div>
         {% endunless %}
         
