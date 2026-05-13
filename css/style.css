@@ -319,12 +319,17 @@ li:hover, .active {
 
 /* Main Section */
 .main_section{
-    min-height: 500px;
     display:grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
     width: 80%;
     margin: 0 auto;
+    /* background-color: rgb(242, 242, 242); */
+}
+
+.main_bar{
+    min-height: 500px;
+    /* padding: 15px; */
     background-color: rgb(242, 242, 242);
 }
 
