@@ -39,16 +39,16 @@
         </div>
 
         <!-- Recent Searches -->
-         {% unless page.disable_recent_searches %}
-            <div style="display:none;">
+        <div style="display:none;">
+            {% unless page.disable_recent_searches %}
                 <div class="recent-header">
                     <span>Recent Search</span>
                     <button class="recent_reset" onclick="clearRecent()">Reset</button>
                 </div>
             
                 <div id="recent-chips"></div>
-            </div>
-        {% endunless %}
+            {% endunless %}
+        </div>
         
         {% unless page.disable_search_bar %}
             <div class="main_section">
