@@ -539,6 +539,10 @@ li:hover, .active {
         width: 100%;
         grid-template-columns: 1fr;
     }
+    .main_bar{
+        min-height: 100px;
+        background-color: transparent;
+    }
     .description{
         min-height: 100px;
         font-size: 16px;
