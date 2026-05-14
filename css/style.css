@@ -78,7 +78,7 @@ h1{
     text-decoration: none;
     color: black;
 }
-.icon_text{
+.icon_text, .menu_mbl{
     display: none;
 }
 .bottom_icon span{
