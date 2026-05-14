@@ -5,9 +5,6 @@
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-.menu_mbl{
-    display: none;
-}
 a{
     -webkit-tap-highlight-color: transparent;
 }
@@ -83,8 +80,6 @@ h1{
 }
 .icon_text{
     display: none;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 .bottom_icon span{
     /* font-size: 1em; */
@@ -442,9 +437,6 @@ li:hover, .active {
 }
 /* Media queries */
 @media (max-width: 768px) {
-    .display_none, .menu_desk{
-        display: none;
-    }
     .top_nav{
         height: 45px;
         padding: 0 10px;
@@ -507,6 +499,9 @@ li:hover, .active {
     .top_icons{
         display: flex;
         gap: 10px;
+    }
+    .display_none, .menu_desk{
+        display: none;
     }
     #recent-container{
         width: 100%;
