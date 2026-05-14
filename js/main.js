@@ -348,8 +348,7 @@ function loadRecentSearches() {
     return;
   }
 
-  container.classList.remove("recent_searches");
-  // container.style.display = "block";
+  container.style.display = "block";
 
   searches.forEach(item => {
 
