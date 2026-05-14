@@ -78,7 +78,7 @@ h1{
     text-decoration: none;
     color: black;
 }
-.icon_text{
+.icon_text, .menu_mbl{
     display: none;
 }
 .bottom_icon span{
@@ -437,6 +437,9 @@ li:hover, .active {
 }
 /* Media queries */
 @media (max-width: 768px) {
+    .menu_mbl{
+        display: block;
+    }
     .top_nav{
         height: 45px;
         padding: 0 10px;
