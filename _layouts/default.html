@@ -18,9 +18,10 @@
 </head>
 <body>
     {% include header.html %}
-    <main>
+    <main class="{% if page.class %}{{ page.class }}{% endif %}">
 
         <div class="top_section">
+
             <div class="top_header">
                 <!-- <h1>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} service {{ page.city | replace: "-", " " | capitalize | default: "India" | capitalize }}</h1> -->
                 {% unless page.disable_main_heading %}
@@ -33,9 +34,25 @@
                     </h1> 
                 {% endunless %}
             </div>
+
             {% unless page.disable_search_bar %}
                 {% include search.html %}
             {% endunless %}
+
+            {% unless page.disable_category_section %}
+                <div class="category_section {% if page.display %}{{ page.display }}{% endif %}">
+                    <a href="/escorts">Escorts</a>
+                    <a href="/callgirls">Callgirls</a>
+                    <a href="/high-profiles">High profiles</a>
+                    <a href="/college-girls">College Girls</a>
+                    <a href="/bhabhis">Bhabhis</a>
+                    <a href="/aunties">Aunties</a>
+                    <a href="/housewifes">Housewifes</a>
+                    <a href="/russians">Russians</a>
+                    <a href="/models">Models</a>
+                </div>
+            {% endunless %}
+
         </div>
 
         <!-- Recent Searches -->
