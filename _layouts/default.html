@@ -53,20 +53,18 @@
                 </div>
             {% endunless %}
 
-        </div>
-
-        <!-- Recent Searches -->
-        <!-- <div id="recent-container" style="display:none;"> -->
-        {% unless page.disable_recent_searches %}
-            <div id="recent-container" class="recent_searches {% if page.display %}{{ page.display }}{% endif %}">
-                <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
-                    <span>Recent Search</span>
-                    <button class="recent_reset" onclick="clearRecent()">Reset</button>
+            {% unless page.disable_recent_searches %}
+                <div id="recent-container" class="recent_searches {% if page.display %}{{ page.display }}{% endif %}">
+                    <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
+                        <span>Recent Search</span>
+                        <button class="recent_reset" onclick="clearRecent()">Reset</button>
+                    </div>
+                
+                    <div id="recent-chips"></div>
                 </div>
-            
-                <div id="recent-chips"></div>
-            </div>
-        {% endunless %}
+            {% endunless %}
+
+        </div>  
         
         {% unless page.disable_search_bar %}
             <div class="main_section">
@@ -77,13 +75,12 @@
                                 <span class="desc_city"><strong>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }}</strong></span> Service in <span class="desc_city"><strong>{{ page.city | default: "india" | replace: "-", " " | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</strong></span>. offers trusted and verified providers near you, delivering quality solutions with affordable pricing and flexible payment options including <strong>Cash on Delivery</strong>. Choose reliable services designed to meet your needs with ease and convenience.
                             </p>
                         </div>
-                    {% endunless %}    
+                    {% endunless %}
+                    {{ content }}    
                 </div>
                 <div class="side_bar"></div>
             </div>
         {% endunless %}
-
-        {{ content }}
 
     </main>
     {% include footer.html %}
