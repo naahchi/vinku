@@ -1,7 +1,7 @@
 ---
 layout: default
-state: andaman-&-nicobar-islands
+state: andaman-and-nicobar-islands
 city: port-blair
 category: bhabhis
-permalink: /andaman-&-nicobar-islands/port-blair/bhabhis/
+permalink: /andaman-and-nicobar-islands/port-blair/bhabhis/
 ---

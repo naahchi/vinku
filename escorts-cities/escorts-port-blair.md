@@ -1,7 +1,7 @@
 ---
 layout: default
-state: andaman-&-nicobar-islands
+state: andaman-and-nicobar-islands
 city: port-blair
 category: escorts
-permalink: /andaman-&-nicobar-islands/port-blair/escorts/
+permalink: /andaman-and-nicobar-islands/port-blair/escorts/
 ---

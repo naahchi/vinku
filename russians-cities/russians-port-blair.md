@@ -1,7 +1,7 @@
 ---
 layout: default
-state: andaman-&-nicobar-islands
+state: andaman-and-nicobar-islands
 city: port-blair
 category: russians
-permalink: /andaman-&-nicobar-islands/port-blair/russians/
+permalink: /andaman-and-nicobar-islands/port-blair/russians/
 ---

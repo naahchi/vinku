@@ -1,7 +1,7 @@
 ---
 layout: default
-state: andaman-&-nicobar-islands
+state: andaman-and-nicobar-islands
 city: port-blair
 category: models
-permalink: /andaman-&-nicobar-islands/port-blair/models/
+permalink: /andaman-and-nicobar-islands/port-blair/models/
 ---
