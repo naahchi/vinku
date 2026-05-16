@@ -388,14 +388,12 @@ document.addEventListener("DOMContentLoaded", loadRecentSearches);
 // Dynamaic Horizontal Scroll
 document.addEventListener("DOMContentLoaded", () => {
 
-  const active = document.querySelector(".cat_link.active");
+  const menu = document.getElementById("menuWrapper");
+  const active = document.querySelector(".menu-item.active");
 
-  if(active){
-    active.scrollIntoView({
-      behavior: "smooth",
-      inline: "center",
-      block: "nearest"
-    });
-  }
+  if(!menu || !active) return;
+
+  const left = active.offsetLeft - (menu.clientWidth / 2) + (active.clientWidth / 2);
+  menu.scrollTo({ left, behavior: "smooth" });
 
 });

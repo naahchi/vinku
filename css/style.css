@@ -662,7 +662,7 @@ li:hover, .active {
         border-radius: 5px;
         flex: 0 0 auto;
     }
-    .cat_link{
+    .menu-item{
         flex-shrink: 0;
     }
     .active{
