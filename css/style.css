@@ -655,15 +655,15 @@ li:hover, .active {
     }
     .sticky_category_section a {
         text-decoration: none;
-        color: black;
         font-size: 15px;
         padding: 5px 10px;
-        background-color: white;
         border-radius: 5px;
         flex: 0 0 auto;
     }
     .menu-item{
         flex-shrink: 0;
+        color: black;
+        background-color: white;
     }
     .active{
         background-color: rgb(39, 39, 39);
