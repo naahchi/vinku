@@ -665,7 +665,7 @@ li:hover, .active {
     .cat_link{
         flex-shrink: 0;
     }
-    .active_cat{
+    .active{
         background-color: rgb(232, 232, 232);
         font-weight: bold;
     }

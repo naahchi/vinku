@@ -384,3 +384,18 @@ function clearRecent() {
 }
 
 document.addEventListener("DOMContentLoaded", loadRecentSearches);
+
+// Dynamaic Horizontal Scroll
+document.addEventListener("DOMContentLoaded", () => {
+
+  const active = document.querySelector(".cat_link.active");
+
+  if(active){
+    active.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
+  }
+
+});
