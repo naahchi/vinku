@@ -270,7 +270,7 @@ function saveSearch(city, state, category) {
 
   let searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
 
-  const newItem = { city, state, category };
+  const newItem = { city, state, state_code, category };
 
   searches = searches.filter(i =>
     !(
@@ -299,7 +299,7 @@ document.querySelectorAll(".menu-item").forEach(item => {
     const category = item.getAttribute("data-category");
     saveSearch("", "", category);
   });
-});
+}); 
 
 // =======================
 // ====== MAIN SEARCH ====
@@ -373,7 +373,8 @@ function loadRecentSearches() {
     const parts = [];
 
     if (item.city) parts.push(formatText(item.city));
-    if (item.state) parts.push(formatText(item.state));
+    // if (item.state) parts.push(formatText(item.state));
+    if (item.state_code) parts.push(formatText(item.state_code));
 
     let label = parts.join(", ");
 
