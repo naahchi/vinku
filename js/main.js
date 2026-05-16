@@ -273,7 +273,11 @@ function saveSearch(city, state, category) {
   const newItem = { city, state, category };
 
   searches = searches.filter(i =>
-    !(i.city === city && i.category === category)
+    !(
+      i.city === city && 
+      i.state === state && 
+      i.category === category
+    )
   );
 
   searches.unshift(newItem);
@@ -372,7 +376,14 @@ function loadRecentSearches() {
 
     chip.innerText = label;
 
-    chip.onclick = () => window.location.href = url;
+    chip.onclick = () => {
+
+      saveSearch(item.city, item.state, item.category);
+
+      loadRecentSearches();
+
+      window.location.href = url;
+    };
 
     wrapper.appendChild(chip);
   });
