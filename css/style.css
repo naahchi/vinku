@@ -666,7 +666,8 @@ li:hover, .active {
         flex-shrink: 0;
     }
     .active{
-        background-color: rgb(232, 232, 232);
+        background-color: rgb(39, 39, 39);
+        color: white;
         font-weight: bold;
     }
     /* .recent_searches{
