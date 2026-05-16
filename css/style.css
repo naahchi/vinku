@@ -505,16 +505,18 @@ li:hover, .active {
         /* margin: 0 auto 10px auto; */
     }
     .category_section{
-        width: 85%;
+        width: 95%;
     }
     .category_section a{
         padding: 5px 10px;
+        font-size: 15px;
     }
     .sticky_category_section{
-        width: 85%;
+        width: 95%;
     }
     .sticky_category_section a{
         padding: 5px 10px;
+        font-size: 15px;
     }
     #recent-container{
         width: 95%;
