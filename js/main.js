@@ -293,6 +293,14 @@ function buildUrl(state, city, category) {
   return "/";
 }
 
+// Save Category Clicks
+document.querySelectorAll(".menu-item").forEach(item => {
+  item.addEventListener("click", () => {
+    const category = item.getAttribute("data-category");
+    saveSearch("", "", category);
+  });
+});
+
 // =======================
 // ====== MAIN SEARCH ====
 // =======================
