@@ -662,6 +662,8 @@ li:hover, .active {
     }
     .menu-item{
         flex-shrink: 0;
+    }
+    .not-active{
         color: black;
         background-color: white;
     }
