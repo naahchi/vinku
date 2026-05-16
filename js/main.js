@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", loadRecentSearches);
 document.addEventListener("DOMContentLoaded", () => {
 
   const menu = document.getElementById("menuWrapper");
-  const active = document.querySelector(".menu-item.active");
+  const active = document.querySelector(".menu-item.active_cat");
 
   if(!menu || !active) return;
 
