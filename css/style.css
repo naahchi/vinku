@@ -175,6 +175,7 @@ footer{
     z-index: 99;
 }
 
+/* Category Section */
 .category_section{
     order: 2;
     width: 70%;
@@ -194,6 +195,28 @@ footer{
     background-color: white;
     border-radius: 5px;
 }
+/* Category Section */
+/* Fixed Category Section */
+.sticky_category_section{
+    order: 2;
+    width: 70%;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.sticky_category_section div{
+    flex: 1;
+}
+.sticky_category_section a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+/* Fixed Category Section */
 
 .search_box{
     width: 100%;
@@ -480,6 +503,12 @@ li:hover, .active {
     .category_section a{
         padding: 5px 10px;
     }
+    .sticky_category_section{
+        width: 85%;
+    }
+    .sticky_category_section a{
+        padding: 5px 10px;
+    }
     #recent-container{
         width: 95%;
     }
@@ -567,7 +596,12 @@ li:hover, .active {
     }
     main{
         min-height: calc(100dvh - 129px);
+    }
+    .fixed_hieght{
         padding: 0 10px;
+    }
+    .non_fixed_hieght{
+        padding: 50px 10px 0 10px;
     }
     .top_header{
         width: 100%;
@@ -595,6 +629,38 @@ li:hover, .active {
         padding: 10px;
         background-color: white;
         border-radius: 5px;
+        box-shadow: 0 0 2.5px 1px gray;
+    }
+    /* Sticky Category Section */
+    .sticky_category_section {
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        position: fixed;
+        top: 45px;
+        z-index: 999;
+        white-space: nowrap;
+        scrollbar-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: 0;
+        margin: 0 -10px 10px -10px;
+        background-color: rgb(180, 180, 180);
+        padding: 10px;
+    }
+    .sticky_category_section::-webkit-scrollbar {
+        display: none;
+    }
+    .sticky_category_section a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        padding: 5px 10px;
+        background-color: white;
+        border-radius: 5px;
+        flex: 0 0 auto;
     }
     /* .recent_searches{
         order: 3;
