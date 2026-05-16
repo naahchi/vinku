@@ -25,6 +25,7 @@ function slugify(text) {
   return (text || "")
     .toLowerCase()
     .trim()
+    .replace(/[()]/g, " ")
     .replace(/\s+/g, "-")
     .replace(/[^\w\-]+/g, "")
     .replace(/\-\-+/g, "-");
@@ -295,12 +296,19 @@ function buildUrl(state, city, category) {
 }
 
 // Save Category Clicks
-document.querySelectorAll(".menu-item").forEach(item => {
-  item.addEventListener("click", () => {
-    const category = item.getAttribute("data-category");
-    saveSearch("", "", "", category);
-  });
-}); 
+document.addEventListener("click", (e) => {
+
+  const item = e.target.closest(".menu-item");
+
+  if (!item) return;
+
+  const category = item.dataset.category;
+
+  if (category) {
+    saveSearch("", "", "", slugify(category));
+  }
+
+});
 
 // =======================
 // ====== MAIN SEARCH ====
@@ -313,11 +321,23 @@ function searchCity() {
 
   let city = "";
   let state = "";
+  let state_code = "";
 
   if (rawInput) {
     const parts = rawInput.split(",");
+
     city = parts[0]?.trim();
     state = parts[1]?.trim();
+
+    // find matched city object
+    const matchedCity = cities.find(item =>
+      slugify(item.city) === slugify(city) &&
+      slugify(item.state) === slugify(state)
+    );
+
+    if (matchedCity) {
+      state_code = matchedCity.state_code || "";
+    }
   }
 
   city = slugify(city);
@@ -362,7 +382,6 @@ function loadRecentSearches() {
   }
 
   container.classList.remove("recent_searches");
-  // container.style.display = "block";
 
   searches.forEach(item => {
 
@@ -374,8 +393,11 @@ function loadRecentSearches() {
     const parts = [];
 
     if (item.city) parts.push(formatText(item.city));
-    if (item.state) parts.push(formatText(item.state));
-    if (item.state_code) parts.push(formatText(item.state_code));
+    if (item.state_code) {
+      parts.push(item.state_code.toUpperCase());
+    } else if (item.state) {
+      parts.push(formatText(item.state));
+    }
 
     let label = parts.join(", ");
 
