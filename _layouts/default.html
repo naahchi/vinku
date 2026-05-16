@@ -42,7 +42,7 @@
             {% unless page.disable_category_section %}
                 <div class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                     {% for cat in categories %}
-                        <a href="/{{ cat }}">{{ cat | replace: "-", " " | capitalize }}</a>
+                        <a href="/{{ cat }}" class="cat_link {% if page.category == cat %}active_cat{% endif %}">{{ cat | replace: "-", " " | capitalize }}</a>
                     {% endfor %}
                 </div>
             {% endunless %}
@@ -80,6 +80,21 @@
     {% include footer.html %}
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const active = document.querySelector(".cat_link.active");
+
+  if(active){
+    active.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
+  }
+
+});
+</script>
 <script>
 
     const SUPABASE_URL = "https://bqujcxvvvnzngjdzujoa.supabase.co";

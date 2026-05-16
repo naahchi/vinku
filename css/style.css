@@ -662,6 +662,13 @@ li:hover, .active {
         border-radius: 5px;
         flex: 0 0 auto;
     }
+    .cat_link{
+        flex-shrink: 0;
+    }
+    .active_cat{
+        background-color: rgb(232, 232, 232);
+        font-weight: bold;
+    }
     /* .recent_searches{
         order: 3;
     } */
