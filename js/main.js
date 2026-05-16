@@ -265,7 +265,7 @@ fetch("https://vinku.in/data/cities.json")
 
 const MAX_ITEMS = 10;
 
-function saveSearch(city, state, category) {
+function saveSearch(city, state, state_code, category) {
   if (!city && !category) return;
 
   let searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
@@ -276,6 +276,7 @@ function saveSearch(city, state, category) {
     !(
       i.city === city && 
       i.state === state && 
+      i.state_code === state_code && 
       i.category === category
     )
   );
@@ -297,7 +298,7 @@ function buildUrl(state, city, category) {
 document.querySelectorAll(".menu-item").forEach(item => {
   item.addEventListener("click", () => {
     const category = item.getAttribute("data-category");
-    saveSearch("", "", category);
+    saveSearch("", "", "", category);
   });
 }); 
 
@@ -333,7 +334,7 @@ function searchCity() {
       }
     }
 
-    saveSearch(city, state, category);
+    saveSearch(city, state, state_code, category);
   }
 
   // REDIRECT
@@ -373,7 +374,7 @@ function loadRecentSearches() {
     const parts = [];
 
     if (item.city) parts.push(formatText(item.city));
-    // if (item.state) parts.push(formatText(item.state));
+    if (item.state) parts.push(formatText(item.state));
     if (item.state_code) parts.push(formatText(item.state_code));
 
     let label = parts.join(", ");
@@ -387,7 +388,7 @@ function loadRecentSearches() {
 
     chip.onclick = () => {
 
-      saveSearch(item.city, item.state, item.category);
+      saveSearch(item.city, item.state, item.state_code, item.category);
 
       loadRecentSearches();
 
