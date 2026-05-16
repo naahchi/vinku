@@ -214,11 +214,11 @@ footer{
     padding: 10px 20px;
     border-radius: 5px;
 }
-.not-active{
+.not_active_cat{
     color: black;
     background-color: white;
 }
-.active{
+.active_cat{
     color: white;
     background-color: black;
     font-weight: bold;
@@ -670,11 +670,11 @@ li:hover, .active {
     .menu-item{
         flex-shrink: 0;
     }
-    .not-active{
+    .not_active_cat{
         color: black;
         background-color: white;
     }
-    .active{
+    .active_cat{
         background-color: rgb(39, 39, 39);
         color: white;
         font-weight: bold;
