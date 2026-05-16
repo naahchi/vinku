@@ -395,6 +395,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const left = active.offsetLeft - (menu.clientWidth / 2) + (active.clientWidth / 2);
   // menu.scrollTo({ left, behavior: "smooth" });
-  // menu.scrollTo({ left, behavior: "smooth" });
+  menu.scrollTo({ left});
 
 });
