@@ -210,11 +210,18 @@ footer{
 }
 .sticky_category_section a{
     text-decoration: none;
-    /* color: black; */
     font-size: 1em;
     padding: 10px 20px;
-    /* background-color: white; */
     border-radius: 5px;
+}
+.not-active{
+    color: black;
+    background-color: white;
+}
+.active{
+    color: white;
+    font-weight: bold;
+    background-color: black;
 }
 /* Fixed Category Section */
 
