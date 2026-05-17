@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: PB
+state: punjab
+city: giddarbaha
+category: escorts
+permalink: /punjab/giddarbaha/escorts/
+---
