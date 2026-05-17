@@ -258,6 +258,9 @@ fetch("https://vinku.in/data/cities.json")
       threshold: 0.3,
       ignoreLocation: true
     });
+
+    loadRecentSearches();
+    saveCurrentPageSearch();
   });
 
 // =======================
@@ -421,11 +424,68 @@ function loadRecentSearches() {
   });
 }
 
+// URL Recent Search Sync
+function saveCurrentPageSearch() {
+
+  const parts = window.location.pathname
+    .split("/")
+    .filter(Boolean);
+
+  let state = "";
+  let city = "";
+  let category = "";
+
+  // /state/city/category/
+  if (parts.length === 3) {
+    state = slugify(parts[0]);
+    city = slugify(parts[1]);
+    category = slugify(parts[2]);
+  }
+
+  // /state/city/
+  else if (parts.length === 2) {
+    state = slugify(parts[0]);
+    city = slugify(parts[1]);
+  }
+
+  // /category/
+  else if (parts.length === 1) {
+
+    // optional:
+    // known categories list check कर सकते हो
+
+    category = slugify(parts[0]);
+  }
+
+  // nothing valid
+  if (!city && !category) return;
+
+  // state code
+  let state_code = "";
+
+  if (city && state) {
+
+    const matchedCity = cities.find(item =>
+      slugify(item.city) === city &&
+      slugify(item.state) === state
+    );
+
+    if (!matchedCity) return;
+
+    state_code = matchedCity.state_code || "";
+  }
+
+  // save silently
+  saveSearch(city, state, state_code, category);
+}
+
+// Clear Recent Searches
 function clearRecent() {
   localStorage.removeItem("recentSearches");
   loadRecentSearches();
 }
 
+// Load recent searches on page load
 document.addEventListener("DOMContentLoaded", loadRecentSearches);
 
 // Dynamaic Horizontal Scroll
