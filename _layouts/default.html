@@ -30,7 +30,7 @@
                         {% if page.title %}
                             {{ page.title }}
                         {% else %}
-                            {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}
+                            {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | replace: "-", " " | capitalize | default: "india" }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}
                         {% endif %}
                     </h1> 
                 {% endunless %}
