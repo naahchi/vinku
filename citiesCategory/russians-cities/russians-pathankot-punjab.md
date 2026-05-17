@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: PB
+state: punjab
+city: pathankot
+category: russians
+permalink: /punjab/pathankot/russians/
+---

@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: AP
+state: andhra-pradesh
+city: gudur
+category: russians
+permalink: /andhra-pradesh/gudur/russians/
+---
