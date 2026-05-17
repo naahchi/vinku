@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: AP
+state: andhra-pradesh
+city: mandapeta
+category: bhabhis
+permalink: /andhra-pradesh/mandapeta/bhabhis/
+---
