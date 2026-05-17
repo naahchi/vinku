@@ -397,7 +397,8 @@ function loadRecentSearches() {
 
     if (item.city) parts.push(formatText(item.city));
     if (item.state_code) {
-      parts.push(item.state_code.toUpperCase());
+      // parts.push(item.state_code.toUpperCase());
+      parts.push(item.state_code);
     } else if (item.state) {
       parts.push(formatText(item.state));
     }
