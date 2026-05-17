@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: RJ
+state: rajasthan
+city: nasirabad
+category: high-profiles
+permalink: /rajasthan/nasirabad/high-profiles/
+---

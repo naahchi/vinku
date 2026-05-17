@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: UP
+state: uttar-pradesh
+city: najibabad
+category: high-profiles
+permalink: /uttar-pradesh/najibabad/high-profiles/
+---

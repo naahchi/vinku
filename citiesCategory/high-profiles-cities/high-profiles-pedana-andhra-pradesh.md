@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: AP
+state: andhra-pradesh
+city: pedana
+category: high-profiles
+permalink: /andhra-pradesh/pedana/high-profiles/
+---

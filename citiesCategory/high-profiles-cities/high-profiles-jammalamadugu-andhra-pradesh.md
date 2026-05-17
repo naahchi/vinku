@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: AP
+state: andhra-pradesh
+city: jammalamadugu
+category: high-profiles
+permalink: /andhra-pradesh/jammalamadugu/high-profiles/
+---

@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: AP
+state: andhra-pradesh
+city: vinukonda
+category: high-profiles
+permalink: /andhra-pradesh/vinukonda/high-profiles/
+---

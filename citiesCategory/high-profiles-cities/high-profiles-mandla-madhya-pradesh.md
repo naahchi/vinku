@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: MP
+state: madhya-pradesh
+city: mandla
+category: high-profiles
+permalink: /madhya-pradesh/mandla/high-profiles/
+---
