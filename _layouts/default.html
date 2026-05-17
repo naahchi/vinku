@@ -43,7 +43,7 @@
             {% unless page.disable_category_section %}
                 <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                     {% for cat in categories %}
-                        <a data-category="{{ cat }}" href="{% if page.city %}{{ page.permalink }}{% endif %}/{{ cat }}" class="menu-item {% if page.category == cat %} active_cat {% else %} not_active_cat {% endif %}">{{ cat | replace: "-", " " | capitalize }}</a>
+                        <a data-category="{{ cat }}" href="{% if page.city %}{{ page.permalink }}{% endif %}{{ cat }}" class="menu-item {% if page.category == cat %} active_cat {% else %} not_active_cat {% endif %}">{{ cat | replace: "-", " " | capitalize }}</a>
                     {% endfor %}
                 </div>
             {% endunless %}
