@@ -1,0 +1,7 @@
+---
+layout: default
+state_code: AP
+state: andhra-pradesh
+city: eluru
+permalink: /andhra-pradesh/eluru/
+---

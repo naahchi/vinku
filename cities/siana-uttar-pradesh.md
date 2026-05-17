@@ -1,0 +1,7 @@
+---
+layout: default
+state_code: UP
+state: uttar-pradesh
+city: siana
+permalink: /uttar-pradesh/siana/
+---
