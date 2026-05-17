@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: TN
+state: tamil-nadu
+city: udhagamandalam
+category: aunties
+permalink: /tamil-nadu/udhagamandalam/aunties/
+---
