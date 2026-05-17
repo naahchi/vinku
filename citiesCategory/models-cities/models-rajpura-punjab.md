@@ -1,0 +1,8 @@
+---
+layout: default
+state_code: PB
+state: punjab
+city: rajpura
+category: models
+permalink: /punjab/rajpura/models/
+---
