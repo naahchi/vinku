@@ -310,7 +310,7 @@ document.addEventListener("click", (e) => {
   const state = slugify(item.dataset.state || "");
   const state_code = item.dataset.stateCode || "";
 
-  saveSearch(city, state, state_code, category);
+  saveSearch(city, '', state_code, category);
 
 });
 
@@ -414,7 +414,8 @@ function loadRecentSearches() {
     if (item.state_code) {
       // parts.push(item.state_code.toUpperCase());
       parts.push(item.state_code);
-    } else if (item.state) {
+    } 
+    else if (item.state) {
       parts.push(formatText(item.state));
     }
 
