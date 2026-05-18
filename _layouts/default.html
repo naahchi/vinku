@@ -46,14 +46,14 @@
                         <a 
                             data-category="{{ cat }}"
 
-                            href="{% assign city_url = '/' | append: cat | append: '/' %}
+                            href="{% assign city_url = '/' | append: page.category | append: '/' %}
                                 {% if page.city and page.state %}
                                     {% assign city_url = '/' 
                                         | append: page.state
                                         | append: '/'
                                         | append: page.city
                                         | append: '/'
-                                        | append: cat
+                                        | append: page.category
                                         | append: '/'
                                     %}
                                 {% endif %}"
