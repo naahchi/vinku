@@ -328,10 +328,10 @@ li:hover, .active {
     font-size: 16px;
     border: 1px solid gray;
     background-color: white;
-    background-image: url('/assets/icons/category.svg');
-    background-repeat: no-repeat;
-    background-position: 12px center;
-    background-size: 18px;
+    background-image: url('/assets/icons/category.svg'), url('/assets/icons/chevron.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 12px center, calc(100% - 12px) center;
+    background-size: 18px, 25px;
 }
 .cat_plus_search select:focus, .cat_plus_search select:focus{
     outline: none;
