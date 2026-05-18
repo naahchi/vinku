@@ -415,9 +415,9 @@ function loadRecentSearches() {
       // parts.push(item.state_code.toUpperCase());
       parts.push(item.state_code);
     } 
-    // else if (item.state) {
-    //   parts.push(formatText(item.state));
-    // }
+    else if (item.state) {
+      parts.push(formatText(item.state));
+    }
 
     let label = parts.join(", ");
 

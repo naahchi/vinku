@@ -44,7 +44,7 @@
                 <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                     {% for cat in categories %}
                         <a 
-                            data-state_code="{{ page.state_code | slugify }}"
+                            data-stateCode="{{ page.state_code | slugify }}"
                             data-state="{{ page.state | slugify }}"
                             data-city="{{ page.city | slugify }}"
                             data-category="{{ cat }}"
