@@ -340,10 +340,9 @@ li:hover, .active {
     outline: none;
 }
 .cat_plus_search button{
-    /* margin: 0; */
-    padding: 0 10px;
-    /* transform: scaleX(-1); */
-    /* font-size: 16px; */
+    width: 15%;
+    height: 40px;
+    border: 1px solid gray;
 }
 
 /* Recent Search Section */
@@ -715,17 +714,22 @@ li:hover, .active {
         padding: 10px 10px 10px 35px;
         background-position: 7.5px center;
     }
-
-    .cat_plus_search button{
-        /* margin: 0; */
-        /* padding: 0 10px; */
-        transform: scaleX(-1);
-        /* font-size: 16px; */
-    }
+    
     .cat_plus_search select{
         padding: 10px 30px 10px 35px;
         background-position: 7.5px center, calc(100% - 7.5px);
     }
+
+    .cat_plus_search button{
+        width: 12.5%;
+        height: 40px;
+        transform: scaleX(-1);
+        background-image: url('/assets/icons/search.svg');
+        background-repeat: no-repeat;
+        background-position: 12px center;
+        background-size: 25px;
+    }
+
     .saerch_btn{
         display: none;
     }
