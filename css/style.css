@@ -324,8 +324,11 @@ li:hover, .active {
 .cat_plus_search select{
     flex: 1;
     height: 40px;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 40px 10px 40px;
     font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border: 1px solid gray;
     background-color: white;
     background-image: url('/assets/icons/category.svg'), url('/assets/icons/chevron.svg');
