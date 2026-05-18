@@ -305,13 +305,28 @@ document.addEventListener("click", (e) => {
 
   if (!item) return;
 
-  const category = item.dataset.category;
+  const category = slugify(item.dataset.category || "");
+  const city = slugify(item.dataset.city || "");
+  const state = slugify(item.dataset.state || "");
+  const state_code = item.dataset.stateCode || "";
 
-  if (category) {
-    saveSearch("", "", "", slugify(category));
-  }
+  saveSearch(city, state, state_code, category);
 
 });
+
+// document.addEventListener("click", (e) => {
+
+//   const item = e.target.closest(".menu-item");
+
+//   if (!item) return;
+
+//   const category = item.dataset.category;
+
+//   if (category) {
+//     saveSearch("", "", "", slugify(category));
+//   }
+
+// });
 
 // =======================
 // ====== MAIN SEARCH ====
