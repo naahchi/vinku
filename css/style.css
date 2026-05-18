@@ -234,10 +234,17 @@ footer{
 
 input {
     width: 100%;
-    padding: 10px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
     font-size: 16px;
     text-transform: capitalize;
     z-index: 99;
+    border: none;
+    background-color: white;
+    background-image: url('{{ "/icons/search.svg" | relative_url }}');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 18px;
 }
 input:focus{
     outline: none;
@@ -691,6 +698,11 @@ li:hover, .active {
     .search_box{
         grid-row: 1 / 1;
     }
+    input{
+        padding: 10px 10px 10px 30px;
+        background-position: 7.5px center;
+    }
+
     .cat_plus_search button{
         /* margin: 0; */
         /* padding: 0 10px; */
