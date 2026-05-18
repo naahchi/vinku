@@ -308,8 +308,9 @@ document.addEventListener("click", (e) => {
   const category = slugify(item.dataset.category || "");
   const city = slugify(item.dataset.city || "");
   const state = slugify(item.dataset.state || "");
-  const state_code = item.dataset.stateCode || "";
+  const state_code = slugify(item.dataset.stateCode || "");
 
+  console.log(city, state, state_code, category);
   saveSearch(city, state, state_code, category);
 
 });
