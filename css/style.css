@@ -239,7 +239,7 @@ input {
     font-size: 16px;
     text-transform: capitalize;
     z-index: 99;
-    /* border: none; */
+    border: 1px solid gray;
     background-color: white;
     background-image: url('/assets/icons/location.svg');
     background-repeat: no-repeat;
@@ -323,8 +323,15 @@ li:hover, .active {
 }
 .cat_plus_search select{
     flex: 1;
-    padding: 10px;
+    height: 40px;
+    padding: 10px 10px 10px 30px;
     font-size: 16px;
+    border: 1px solid gray;
+    background-color: white;
+    background-image: url('/assets/icons/category.svg');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 18px;
 }
 .cat_plus_search button{
     /* margin: 0; */
@@ -708,6 +715,10 @@ li:hover, .active {
         /* padding: 0 10px; */
         transform: scaleX(-1);
         /* font-size: 16px; */
+    }
+    .cat_plus_search select{
+        padding: 10px 10px 10px 30px;
+        background-position: 7.5px center;
     }
     .saerch_btn{
         display: none;
