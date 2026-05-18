@@ -44,10 +44,10 @@
                 <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                     {% for cat in categories %}
                         <a 
-                            data-stateCode="{{ page.state_code | slugify }}"
                             data-state="{{ page.state | slugify }}"
                             data-city="{{ page.city | slugify }}"
                             data-category="{{ cat }}"
+                            data-state-code="{{ page.state_code }}"
 
                             href="
                             {% if page.city and page.state %}
@@ -56,7 +56,10 @@
                                 /{{ cat }}/
                             {% endif %}"
 
-                            class="menu-item {% if page.category == cat %} active_cat {% else %} not_active_cat {% endif %}">{{ cat | replace: "-", " " | capitalize }}</a>
+                            class="menu-item {% if page.category == cat %} active_cat {% else %} not_active_cat {% endif %}"
+                        >
+                            {{ cat | replace: "-", " " | capitalize }}
+                        </a>
                     {% endfor %}
                 </div>
             {% endunless %}
