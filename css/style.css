@@ -241,7 +241,7 @@ input {
     z-index: 99;
     border: none;
     background-color: white;
-    background-image: url('{{ "/icons/search.svg" | relative_url }}');
+    background-image: url('{{ "/assets/icons/location.svg" | relative_url }}');
     background-repeat: no-repeat;
     background-position: 12px center;
     background-size: 18px;
