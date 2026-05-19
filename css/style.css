@@ -116,41 +116,12 @@ main{
     /* margin: 0 50px 10px 50px; */
     /* z-index: 1; */
 }
-/* Coming soon */
-/* main::before{
-    content: "Coming Soon";
-    position: absolute;
-    font-size: clamp(40px, 4vw, 60px);
-    font-weight: bold;
-    color: rgb(205, 205, 205);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    z-index: 0;
-} */
-/* main > * {
-    position: relative;
-    z-index: 2;
-} */
-
-/* .coming_soon{
-    color: gray;
-    font-size: 22px;
-    letter-spacing: 15px;
-    font-weight: bold;
-} */
 footer{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     /* margin-bottom: 45px; */
     padding: 10px;
     background-color: rgb(200, 200, 200);
-}
-.company{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
 }
 
 .top_section{
@@ -192,8 +163,9 @@ footer{
     /* color: black; */
     font-size: 1em;
     padding: 10px 20px;
+    border: 1px solid gray;
     /* background-color: white; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 /* Category Section */
 /* Fixed Category Section */
@@ -212,7 +184,7 @@ footer{
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .not_active_cat{
     color: black;
@@ -656,8 +628,9 @@ li:hover, .active {
         font-size: 15px;
         padding: 10px;
         background-color: white;
-        border-radius: 5px;
-        box-shadow: 0 0 2.5px 1px gray;
+        border: 1px solid gray;
+        /* border-radius: 5px; */
+        /* box-shadow: 0 0 2.5px 1px gray; */
     }
     /* Sticky Category Section */
     .sticky_category_section {
@@ -685,8 +658,9 @@ li:hover, .active {
         text-decoration: none;
         font-size: 15px;
         padding: 5px 10px;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         flex: 0 0 auto;
+        border: 1px solid white;
     }
     .menu-item{
         flex-shrink: 0;
@@ -726,7 +700,7 @@ li:hover, .active {
         transform: scaleX(-1);
         background-image: url('/assets/icons/search.svg');
         background-repeat: no-repeat;
-        background-position: 12px center;
+        background-position: 11px center;
         background-size: 25px;
     }
 
