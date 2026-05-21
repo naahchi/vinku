@@ -135,7 +135,7 @@ footer{
 
 .top_section{
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
 }
 
 .top_header{
@@ -641,8 +641,18 @@ li:hover, .active {
         width: 100%;
         margin: 0 auto 10px auto;
     }
-    .category_section{
+
+    .cat_header{
         order: 4;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cat_header button {
+        padding: 1px 5px;
+    }
+
+    .category_section{
+        order: 5;
         width: 100%;
         margin: 10px auto;
         display: grid;
@@ -733,14 +743,6 @@ li:hover, .active {
 
     .saerch_btn{
         display: none;
-    }
-
-    .cat_header{
-        display: flex;
-        justify-content: space-between;
-    }
-    .cat_header button {
-        padding: 1px 5px;
     }
 
     .main_section{

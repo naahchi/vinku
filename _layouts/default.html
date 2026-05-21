@@ -41,6 +41,13 @@
             {% endunless %}
 
             {% unless page.disable_category_section %}
+                <div class="cat_header {% if page.display %}{{ page.display }}{% endif %}">
+                    <span>Category</span>
+                    <button>View all</button>
+                </div>
+            {% endunless %}
+
+            {% unless page.disable_category_section %}
                 <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                     {% for cat in categories %}
                         <a 
@@ -76,13 +83,6 @@
             {% endunless %}
 
         </div>
-        
-        {% unless page.disable_category_section %}
-            <div class="cat_header {% if page.display %}{{ page.display }}{% endif %}">
-                <span>Category</span>
-                <button>View all</button>
-            </div>
-        {% endunless %}
         
         {% unless page.disable_search_bar %}
             <div class="main_section">
