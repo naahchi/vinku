@@ -250,7 +250,10 @@ input:focus{
 
 #suggestions{
     z-index: 99;
-    padding: 10px 10px 10px 40px;
+}
+
+.chip{
+    padding: 0px 0px 0px 30px;
     background-image: url('/assets/icons/location.svg');
     background-repeat: no-repeat;
     background-position: 12px center;
