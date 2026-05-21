@@ -252,13 +252,13 @@ input:focus{
     z-index: 99;
 }
 
-.chip{
+/* .chip{
     padding: 0px 0px 0px 30px;
     background-image: url('/assets/icons/location.svg');
     background-repeat: no-repeat;
     background-position: 12px center;
     background-size: 18px;
-}
+} */
 
 ul {
   margin: 0;
@@ -270,9 +270,13 @@ ul {
 
 /* suggestion item */
 li {
-  padding: 10px;
-  cursor: pointer;
-  z-index: 99;
+    padding: 0px 0px 0px 30px;
+    background-image: url('/assets/icons/location.svg');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 18px;
+    cursor: pointer;
+    z-index: 99;
 }
 
 li:nth-child(odd){
