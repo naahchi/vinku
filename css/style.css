@@ -311,6 +311,9 @@ li:hover, .active {
   100% { background-position: 200px 0; }
 }
 
+.cat_header {
+    display: none;
+}
 .cat_plus_search{
     display: flex;
     gap: 5px;
@@ -731,6 +734,15 @@ li:hover, .active {
     .saerch_btn{
         display: none;
     }
+
+    .cat_header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cat_header button {
+        padding: 1px 5px;
+    }
+
     .main_section{
         width: 100%;
         grid-template-columns: 1fr;
@@ -748,10 +760,10 @@ li:hover, .active {
     .side_bar{
         display: none; 
     }
-    .display_none, .menu_desk{
-        display: none;
-    }
     footer{
         margin-bottom: 45px;
+    }
+    .display_none, .menu_desk{
+        display: none;
     }
 }

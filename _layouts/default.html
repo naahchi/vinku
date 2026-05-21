@@ -75,7 +75,14 @@
                 </div>
             {% endunless %}
 
-        </div>  
+        </div>
+        
+        {% unless page.disable_category_section %}
+            <div class="cat_header {% if page.display %}{{ page.display }}{% endif %}">
+                <span>Category</span>
+                <button>View all</button>
+            </div>
+        {% endunless %}
         
         {% unless page.disable_search_bar %}
             <div class="main_section">
