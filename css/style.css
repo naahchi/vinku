@@ -357,7 +357,7 @@ li:hover, .active {
 }
 #recent-chips {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   overflow-x: auto;
   padding: 10px 0;
   z-index: 0;
@@ -379,10 +379,13 @@ li:hover, .active {
   flex: 0 0 auto;
   padding: 5px 10px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background: #fff;
   cursor: pointer;
   white-space: nowrap;
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 /* Main Section */
