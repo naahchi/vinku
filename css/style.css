@@ -357,7 +357,7 @@ li:hover, .active {
 }
 #recent-chips {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   overflow-x: auto;
   padding: 10px 0;
   z-index: 0;
@@ -380,10 +380,11 @@ li:hover, .active {
   padding: 5px 10px;
   border: 1px solid #ccc;
   /* border-radius: 20px; */
-  background: #fff;
+  background: gray;
+  color: white;
   cursor: pointer;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 1px;
   word-spacing: 1px;
 }
@@ -557,16 +558,16 @@ li:hover, .active {
         justify-content: space-evenly;
     }
     .logo{
-        padding: 1px 10px;
+        /* padding: 1px 10px; */
         letter-spacing: 1px;
         text-decoration: none;
         color: black;
         font-family: Arial, Helvetica, sans-serif;
         font-size: clamp(20px, 4vw, 25px);
         font-weight: 1000;
-        background-color: rgb(232, 232, 232);
-        border-radius: 5px;
-        box-shadow: 0 0 2.5px 1px gray;
+        /* background-color: rgb(232, 232, 232); */
+        /* border-radius: 5px; */
+        /* box-shadow: 0 0 2.5px 1px gray; */
     }
     .login_link{
         padding: 0;
