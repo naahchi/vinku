@@ -198,7 +198,6 @@ footer{
     width: 50%;
     margin: auto;
     border-radius: 50%;
-    background-color: red;
 }
 /* New Category Section */
 /* Fixed Category Section */
@@ -852,4 +851,30 @@ li:hover, .active {
     .sticky_category_section img{
         display: none;
     }
+}
+
+/* Category img loading */
+.sticky_category_section img.cat-loading{
+    opacity: .4;
+    animation: cat-pulse 1s infinite;
+    background: #eee;
+}
+.sticky_category_section img:not(.cat-loading){
+    opacity: 1;
+    animation: none;
+}
+.category img.cat-loading{
+    opacity: .4;
+    animation: cat-pulse 1s infinite;
+    background: #eee;
+}
+.category img:not(.cat-loading){
+    opacity: 1;
+    animation: none;
+}
+
+@keyframes cat-pulse {
+    0% {filter: brightness(95%);}
+    50% {filter: brightness(85%);}
+    100% {filter: brightness(95%);}
 }
