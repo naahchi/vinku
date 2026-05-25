@@ -838,4 +838,7 @@ li:hover, .active {
     .display_none, .menu_desk{
         display: none;
     }
+    .sticky_category_section img{
+        display: none;
+    }
 }
