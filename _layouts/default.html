@@ -66,7 +66,7 @@
 
                             class="menu-item {% if page.category == cat %} active_cat {% else %} not_active_cat {% endif %}"
                         >
-                            <img src="/assets/images/cat-icon/{{ cat }}.webp" class="{% if page.city or page.category %}display_none{% endif %}">
+                            <img src="/assets/images/cat-icon/{{ cat }}.webp" class="{% if page.display %}{{ page.display }}{% endif %}">
                             <span>{{ cat | replace: "-", " " | capitalize }}</span>
                         </a>
                     {% endfor %}
