@@ -48,7 +48,7 @@
             {% endunless %} -->
 
             {% unless page.disable_category_section %}
-                <div id="menuWrapper" class="category">
+                <div id="menuWrapper" class="category {% if page.display %}{{ page.display }}{% endif %}">
                 <!-- <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}"> -->
                     {% for cat in categories %}
                         <a 
