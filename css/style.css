@@ -210,7 +210,7 @@ footer{
     justify-content: space-between;
     text-align: center;
 }
-.sticky_category_section img{
+.sticky_category_section div{
     flex: 1;
 }
 .sticky_category_section a{
