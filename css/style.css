@@ -602,7 +602,7 @@ li:hover, .active {
         text-decoration: none;
         color: black;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(20px, 4vw, 25px);
+        font-size: 23px;
         font-weight: 1000;
         /* background-color: rgb(232, 232, 232); */
         /* border-radius: 5px; */
