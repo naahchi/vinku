@@ -48,7 +48,7 @@
             {% endunless %} -->
 
             {% unless page.disable_category_section %}
-                <div id="menuWrapper" class="category">
+                <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                 <!-- <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}"> -->
                     {% for cat in categories %}
                         <a 
@@ -66,7 +66,7 @@
 
                             class="menu-item {% if page.category == cat %} active_cat {% else %} not_active_cat {% endif %}"
                         >
-                            <img src="/assets/images/cat-icon/{{ cat }}.webp">
+                            <img src="/assets/images/cat-icon/{{ cat }}.webp" class="{% if page.city or page.category %} display_none{% endif %}">
                             <span>{{ cat | replace: "-", " " | capitalize }}</span>
                         </a>
                     {% endfor %}
