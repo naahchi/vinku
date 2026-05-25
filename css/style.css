@@ -555,6 +555,22 @@ li:hover, .active {
         padding: 5px 10px;
         font-size: 15px;
     }
+    /* New Category Section */
+    .category{
+        width: 95%;
+    }
+    .category a{
+        font-size: 15px;
+    }
+        
+    /* .category img{
+        display: block;
+        width: 50%;
+        margin: auto;
+        border-radius: 50%;
+        background-color: red;
+    } */
+    /* New Category Section */
     .sticky_category_section{
         width: 95%;
     }
