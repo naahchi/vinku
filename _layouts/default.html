@@ -65,7 +65,7 @@
 
                             class="menu-item {% if page.category == cat %}active_cat{% endif %}"
                         >
-                            <img onload="this.classList.remove('cat-loading');" src="/assets/images/cat-icon/{{ cat }}.webp" class="{% if page.display %}{{ page.display }}{% endif %}">
+                            <img onload="this.classList.remove('cat-loading');" src="/assets/images/cat-icon/{{ cat }}.webp" class="loading {% if page.display %}{{ page.display }}{% endif %}">
                             <span>{{ cat | replace: "-", " " | capitalize }}</span>
                         </a>
                     {% endfor %}
