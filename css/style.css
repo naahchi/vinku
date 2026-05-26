@@ -561,7 +561,7 @@ li:hover, .active {
 }
 
 /* Mobile Desktop Queries */
-@media (min-width: 980px) {
+@media (max-width: 980px) {
     .top_nav{
         height: 55px;
         padding: 0 2.5%
