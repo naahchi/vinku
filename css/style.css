@@ -182,6 +182,7 @@ footer{
     order: 2;
     width: 70%;
     margin: auto;
+    display: grid;
     grid-template-columns: repeat(9, 1fr);
     /* display: flex; */
     /* padding: 10px;    */
@@ -207,6 +208,7 @@ footer{
     order: 2;
     width: 70%;
     margin: 0 auto 5px auto;
+    display: grid;
     grid-template-columns: repeat(9, 1fr);
     /* display: flex;
     justify-content: space-between;
