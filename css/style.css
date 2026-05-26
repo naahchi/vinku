@@ -182,7 +182,8 @@ footer{
     order: 2;
     width: 70%;
     margin: auto;
-    display: flex;
+    grid-template-columns: repeat(9, 1fr);
+    /* display: flex; */
     /* padding: 10px;    */
 }
 .category a{
@@ -206,13 +207,14 @@ footer{
     order: 2;
     width: 70%;
     margin: 0 auto 5px auto;
-    display: flex;
+    grid-template-columns: repeat(9, 1fr);
+    /* display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: center; */
 }
-.sticky_category_section div{
+/* .sticky_category_section div{
     flex: 1;
-}
+} */
 .sticky_category_section a{
     display: grid;
     gap: 10px;
