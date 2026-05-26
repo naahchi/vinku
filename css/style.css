@@ -210,9 +210,6 @@ footer{
     margin: 0 auto 5px auto;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    /* display: flex;
-    justify-content: space-between;
-    text-align: center; */
 }
 /* .sticky_category_section div{
     flex: 1;
@@ -614,7 +611,7 @@ li:hover, .active {
         width: 95%;
     }
     .sticky_category_section a{
-        padding: 5px 10px;
+        /* padding: 5px 10px; */
         font-size: 15px;
     }
     #recent-container{
