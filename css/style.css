@@ -191,7 +191,7 @@ footer{
     display: grid;
     gap: 10px;
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     /* color: black; */
 }
     
@@ -218,7 +218,7 @@ footer{
     display: grid;
     gap: 10px;
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     /* color: black; */
     /* font-size: 1em; */
     /* padding: 10px 20px; */
@@ -257,11 +257,14 @@ footer{
 }
 .not_active_cat{
     color: black;
+    text-decoration: none;
     /* background-color: white; */
 }
 .active_cat{
     color: black;
     text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
     /* background-color: black; */
     /* font-weight: bold; */
 }
