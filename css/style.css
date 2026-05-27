@@ -565,10 +565,6 @@ li:hover, .active {
     box-shadow: 0 0 2.5px 1px gray;
 }
 
-/* .recent_searches{
-    display: none;
-} */
-
 /* Mobile Desktop Queries */
 @media (max-width: 980px) {
     .top_nav{
@@ -820,11 +816,11 @@ li:hover, .active {
     .menu-item{
         flex-shrink: 0;
     }
-    .not_active_cat{
+    .sticky_category_section .not_active_cat{
         color: black;
         background-color: white;
     }
-    .active_cat{
+    .sticky_category_section .active_cat{
         background-color: rgb(39, 39, 39);
         color: white;
         font-weight: bold;
