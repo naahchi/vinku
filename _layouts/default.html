@@ -63,7 +63,7 @@
                                 /{{ cat }}/
                             {% endif %}"
 
-                            class="menu-item {% if page.category == cat %}active_cat{% endif %}"
+                            class="menu-item {% if page.category == cat %}active_cat{% else %}not_active_cat{% endif %}"
                         >
                             <img class="cat-loading {% if page.display %}{{ page.display }}{% endif %}" onload="this.classList.remove('cat-loading');" src="/assets/images/cat-icon/{{ cat }}.webp">
                             <!-- <img class="{% if page.display %}{{ page.display }}{% endif %} cat-loading" onload="this.classList.remove('cat-loading');" src="/assets/images/cat-icon/{{ cat }}.webp"> -->

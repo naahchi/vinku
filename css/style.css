@@ -811,10 +811,10 @@ li:hover, .active {
     .menu-item{
         flex-shrink: 0;
     }
-    /* .not_active_cat{
+    .not_active_cat{
         color: black;
         background-color: white;
-    } */
+    }
     .active_cat{
         background-color: rgb(39, 39, 39);
         color: white;
