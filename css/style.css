@@ -255,15 +255,16 @@ footer{
     50% {filter: brightness(85%);}
     100% {filter: brightness(95%);}
 }
-/* .not_active_cat{
+.not_active_cat{
     color: black;
-    background-color: white;
+    /* background-color: white; */
 }
 .active_cat{
-    color: white;
-    background-color: black;
-    font-weight: bold;
-} */
+    color: black;
+    text-decoration: underline;
+    /* background-color: black; */
+    /* font-weight: bold; */
+}
 /* Fixed Category Section */
 
 .search_box{
