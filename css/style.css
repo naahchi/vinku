@@ -420,7 +420,7 @@ li:hover, .active {
     justify-content: space-between;
 }
 #recent-chips {
-  display: flex;
+  /* display: flex; */
   gap: 10px;
   overflow-x: auto;
   padding: 10px 0;
@@ -483,6 +483,7 @@ li:hover, .active {
 
 .side_bar{
     min-height: 300px;
+    padding: 0 10px;
     background-color: rgb(242, 242, 242);
 }
 
@@ -564,9 +565,9 @@ li:hover, .active {
     box-shadow: 0 0 2.5px 1px gray;
 }
 
-.recent_searches{
+/* .recent_searches{
     display: none;
-}
+} */
 
 /* Mobile Desktop Queries */
 @media (max-width: 980px) {
