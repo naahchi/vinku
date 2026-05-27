@@ -40,11 +40,11 @@
                 {% include search.html %}
             {% endunless %}
 
-            {% unless page.disable_category_section %}
+            <!-- {% unless page.disable_category_section %}
                 <div class="cat_header {% if page.city or page.category %} display_none{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
                     <span>Category</span>
                 </div>
-            {% endunless %}
+            {% endunless %} -->
 
             {% unless page.disable_category_section %}
                 <div id="menuWrapper" class="{% if page.city or page.category %}sticky_category_section{% else %}category{% endif %} {% if page.display %}{{ page.display }}{% endif %}">

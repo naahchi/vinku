@@ -722,15 +722,15 @@ li:hover, .active {
         margin: 0 auto 10px auto;
     }
 
-    .cat_header{
+    /* .cat_header{
         order: 4;
         padding: 10px 0 15px 0;
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     .category_section{
-        order: 5;
+        order: 4;
         width: 100%;
         margin: 10px auto;
         display: grid;
@@ -749,12 +749,12 @@ li:hover, .active {
     }
     /* New Cayegory */
     .category{
-        order: 5;
+        order: 4;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
-        margin: 0 0 20px 0;
+        margin: 20px 0;
         /* padding: 10px;    */
     }
     .category a{
