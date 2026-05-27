@@ -564,6 +564,10 @@ li:hover, .active {
     box-shadow: 0 0 2.5px 1px gray;
 }
 
+.recent_searches{
+    display: none;
+}
+
 /* Mobile Desktop Queries */
 @media (max-width: 980px) {
     .top_nav{

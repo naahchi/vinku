@@ -98,7 +98,18 @@
                     {% endunless %}
                     {{ content }}    
                 </div>
-                <div class="side_bar"></div>
+                <div class="side_bar">
+                    {% unless page.disable_recent_searches %}
+                        <div id="recent-container" class="recent_searches {% if page.display %}{{ page.display }}{% endif %}">
+                            <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
+                                <span>Recent Search</span>
+                                <button class="recent_reset" onclick="clearRecent()">Reset</button>
+                            </div>
+                        
+                            <div id="recent-chips"></div>
+                        </div>
+                    {% endunless %}
+                </div>
             </div>
         {% endunless %}
 
