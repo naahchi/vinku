@@ -2,124 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %}
-            {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}
-        {% endif %}
-    </title>
-    <!-- {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} {{ page.center | replace: "-", " " | capitalize | default: "Service" }} {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %} -->
-    <!-- <title>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} {{ page.center | replace: "-", " " | capitalize | default: "Service" }} {{ page.city | default: "india" | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</title> -->
+    <title>Personals Service India</title>
     <meta name="description" content='{{ page.category | replace: "-", " " | capitalize | default: "personals" }} service in {{ page.city | default: "india" | replace: "-", " " }}{% if page.state %}, {{ page.state | replace: "-", " " }}{% endif %} - trusted and verified providers near you offering quality solutions, affordable pricing, and cash on delivery options.'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ '/assets/images/favicon/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 </head>
 <body>
-    {% include header.html %}
-    <main class="{% if page.class %}{{ page.class }}{% endif %} {% if page.city or page.category %} non_fixed_hieght{% else %} fixed_hieght{% endif %}">
-
-        <div class="top_section">
-
-            <div class="top_header">
-                <!-- <h1>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }} service {{ page.city | replace: "-", " " | capitalize | default: "India" | capitalize }}</h1> -->
-                {% unless page.disable_main_heading %}
-                    <h1>
-                        {% if page.title %}
-                            {{ page.title }}
-                        {% else %}
-                            {{ page.category | replace: "-", " " | capitalize | default: "Personals" }} Service {{ page.city | replace: "-", " " | capitalize | default: "india" }}{% if page.state %}, {{ page.state_code }}{% endif %}
-                        {% endif %}
-                    </h1> 
-                {% endunless %}
-            </div>
-
-            {% unless page.disable_search_bar %}
-                {% include search.html %}
-            {% endunless %}
-
-            <!-- {% unless page.disable_category_section %}
-                <div class="cat_header {% if page.city or page.category %} display_none{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
-                    <span>Category</span>
-                </div>
-            {% endunless %} -->
-
-            {% unless page.disable_category_section %}
-                <div id="menuWrapper" class="{% if page.city or page.category %}sticky_category_section{% else %}category{% endif %} {% if page.display %}{{ page.display }}{% endif %}">
-                <!-- <div id="menuWrapper" class="{% if page.city or page.category %} sticky_category_section{% else %} category_section{% endif %} {% if page.display %}{{ page.display }}{% endif %}"> -->
-                    {% for cat in categories %}
-                        <a 
-                            data-state="{{ page.state | slugify }}"
-                            data-city="{{ page.city | slugify }}"
-                            data-category="{{ cat }}"
-                            data-state-code="{{ page.state_code }}"
-
-                            href="
-                            {% if page.city and page.state %}
-                                /{{ page.state | slugify }}/{{ page.city | slugify }}/{{ cat }}/
-                            {% else %}
-                                /{{ cat }}/
-                            {% endif %}"
-
-                            class="menu-item {% if page.category == cat %}active_cat{% else %}not_active_cat{% endif %}"
-                        >
-                            <img class="cat-loading {% if page.display %}{{ page.display }}{% endif %}" onload="this.classList.remove('cat-loading');" src="/assets/images/cat-icon/{{ cat }}.webp">
-                            <!-- <img class="{% if page.display %}{{ page.display }}{% endif %} cat-loading" onload="this.classList.remove('cat-loading');" src="/assets/images/cat-icon/{{ cat }}.webp"> -->
-                            <span>{{ cat | replace: "-", " " | capitalize }}</span>
-                        </a>
-                    {% endfor %}
-                </div>
-            {% endunless %}
-
-            {% unless page.disable_recent_searches %}
-                <div id="recent-container" class="recent_searches {% if page.display %}{{ page.display }}{% endif %}">
-                    <div class="recent-header {% if page.display %}{{ page.display }}{% endif %}">
-                        <span>Recent Search</span>
-                        <button class="recent_reset" onclick="clearRecent()">Reset</button>
-                    </div>
-                
-                    <div id="recent-chips"></div>
-                </div>
-            {% endunless %}
-
-        </div>
-        
-        {% unless page.disable_search_bar %}
-            <div class="main_section">
-                <div class="main_bar">
-                    {% unless page.disable_description %}
-                        <div class="description">
-                            <p>
-                                <span class="desc_city"><strong>{{ page.category | replace: "-", " " | capitalize | default: "Personals" }}</strong></span> Service in <span class="desc_city"><strong>{{ page.city | default: "india" | replace: "-", " " | capitalize }}{% if page.state %}, {{ page.state | replace: "-", " " | capitalize }}{% endif %}</strong></span>. offers trusted and verified providers near you, delivering quality solutions with affordable pricing and flexible payment options including <strong>Cash on Delivery</strong>. Choose reliable services designed to meet your needs with ease and convenience.
-                            </p>
-                        </div>
-                    {% endunless %}
-                    {{ content }}    
-                </div>
-                <div class="side_bar"></div>
-            </div>
-        {% endunless %}
-
-    </main>
-    {% include footer.html %}
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-
-    const SUPABASE_URL = "https://bqujcxvvvnzngjdzujoa.supabase.co";
-
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJxdWpjeHZ2dm56bmdqZHp1am9hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg1NjI1OTQsImV4cCI6MjA5NDEzODU5NH0.FULilTXp8OjvuHjla7au6C1x-hjm9A4ucT1UmqhNk8Q";
-
-    const supabaseClient = supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_ANON_KEY
-    );
-
-    console.log("Supabase Connected");
-
-</script>
-<script src="/js/main.js"></script>
+    <main class="coming_soon"></main>
 </body>
 </html>
